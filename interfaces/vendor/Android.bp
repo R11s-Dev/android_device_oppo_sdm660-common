@@ -1,0 +1,4 @@
+hidl_package_root {
+    name: "vendor.oppo",
+    path: "device/oppo/sdm660-common/interfaces/vendor",
+}
