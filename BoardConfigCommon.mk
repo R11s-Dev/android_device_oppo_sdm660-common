@@ -82,7 +82,6 @@ BOARD_KERNEL_CMDLINE := \
     sched_enable_hmp=1 \
     sched_enable_power_aware=1 \
     service_locator.enable=1 \
-    swiotlb=1 \
     loop.max_part=7
 # TODO: Set SELinux to Permissive mode
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
