@@ -55,6 +55,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        # Patch libdpmframework to add libshim_dpmframework shim
+        product/lib64/libdpmframework.so)
+        "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+        ;;
         # Patch libwvhidl to load versioned libprotobuf from SDK 29, as SDK 30 removed some symbols
         vendor/lib64/libwvhidl.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
