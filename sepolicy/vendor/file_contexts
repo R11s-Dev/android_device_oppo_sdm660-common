@@ -1,0 +1,3 @@
+# Partition Mountpoints
+/bt_firmware(/.*)?                                      u:object_r:bt_firmware_file:s0
+/firmware(/.*)?                                         u:object_r:vendor_firmware_file:s0

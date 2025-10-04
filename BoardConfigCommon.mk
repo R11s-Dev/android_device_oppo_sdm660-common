@@ -107,6 +107,11 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/dsp:/dsp
+
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
@@ -134,6 +139,7 @@ VENDOR_SECURITY_PATCH := 2020-10-05
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_VNDK_VERSION := current
