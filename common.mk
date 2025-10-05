@@ -314,6 +314,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom_ramdisk
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
