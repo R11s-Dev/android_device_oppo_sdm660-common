@@ -319,6 +319,19 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk
 
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh
+
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
