@@ -587,6 +587,7 @@ vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
+vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
@@ -615,9 +616,6 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
-
-# RIL - from Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
-vendor/lib64/libsettings.so|9d8b1850e0dc0452b1b96e77045adab2f13270b2
 
 # SCVE
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
