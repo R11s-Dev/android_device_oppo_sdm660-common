@@ -61,8 +61,6 @@ on early-init
 
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
-    # Load WIGIG platform driver
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
     # Create cgroup mount point for memory
@@ -986,18 +984,6 @@ service wifi_ftmd /system/vendor/bin/wifi_ftmd
     socket wififtmd_server dgram 0660 system system
     disabled
     oneshot
-
-on property:persist.vendor.data.shs_ko_load=1
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_shs
-
-on property:persist.vendor.data.shs_ko_load=0
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_shs
-
-on property:persist.vendor.data.perf_ko_load=1
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_perf
-
-on property:persist.vendor.data.perf_ko_load=0
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_perf
 
 service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     class late_start
