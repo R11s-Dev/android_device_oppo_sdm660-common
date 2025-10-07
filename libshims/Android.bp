@@ -19,3 +19,12 @@ cc_library_shared {
         "strdup8to16.cpp",
     ],
 }
+
+cc_library_shared {
+    name: "libui_shim",
+    srcs: [
+        "GraphicBuffer.cpp"
+    ],
+    shared_libs: ["libui"],
+    vendor: true
+}

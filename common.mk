@@ -334,7 +334,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_dpmframework
+    libshim_dpmframework \
+    libui_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
