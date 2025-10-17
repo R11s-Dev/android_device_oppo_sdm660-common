@@ -53,6 +53,16 @@ PRODUCT_PACKAGES += \
     libssrec \
     tinymix
 
+# A2DP
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    android.hardware.bluetooth.a2dp@1.0-service
+ 
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
