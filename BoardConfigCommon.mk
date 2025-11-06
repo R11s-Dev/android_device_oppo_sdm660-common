@@ -97,6 +97,7 @@ BOARD_MKBOOTIMG_ARGS += \
 TARGET_KERNEL_CLANG_COMPILE := false
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/oppo/sdm660
+TARGET_KERNEL_CONFIG := vendor/sdm660-perf_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
