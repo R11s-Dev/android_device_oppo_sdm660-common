@@ -447,3 +447,16 @@ if [ -f /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies ]; then
     gpu_freq=`cat /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies` 2> /dev/null
     setprop vendor.gpu.available_frequencies "$gpu_freq"
 fi
+
+# Set Bluetooth UART autosuspend delay
+# Extend the Bluetooth serial port auto-suspend time to prevent the serial port from suspending during firmware downloads
+uart_autosuspend_file="/sys/bus/platform/devices/c1af000.uart/power/autosuspend_delay_ms"
+if [ -f "$uart_autosuspend_file" ]; then
+    if echo "200" > "$uart_autosuspend_file" 2>/dev/null; then
+        log -t BOOT -p i "Bluetooth UART autosuspend delay set to 200ms"
+    else
+        log -t BOOT -p w "Failed to set Bluetooth UART autosuspend delay"
+    fi
+else
+    log -t BOOT -p w "Bluetooth UART autosuspend file not found: $uart_autosuspend_file"
+fi
