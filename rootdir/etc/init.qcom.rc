@@ -317,6 +317,8 @@ on post-fs-data
 
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
+    mkdir /data/misc/camera 0770 cameraserver cameraserver
+    mkdir /data/misc/camera/cp 0770 cameraserver cameraserver
 
     # b/65834073 Create rfs folder for tftp_server
     mkdir /data/vendor/tombstones 0770 system system
