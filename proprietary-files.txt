@@ -178,7 +178,7 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|dfedda144d19622e3e579186033da2b
 vendor/lib64/vendor.qti.latency@2.0.so|72645a214e8675680862af236420d8195651f29d
 
 # Camera - from R11
-vendor/lib/libmmcamera_interface.so|f962ffe900c22b033c56754fb51798acaf12431a
+vendor/lib/libmmcamera_interface.so|a211f99c7979b554f05d6328590a22b8420a3d6b
 vendor/lib/libmmjpeg_interface.so|e1203035969c49e07fb7ed558d27b197b0b02d46
 vendor/lib/libStDualCam.so|fd95294289e51b9810fd3e1d5a02a7b63d6dde5c
 vendor/lib/libopposfr.so|e1f4d64777e6056048f81bd584389e5249aae13f
@@ -251,7 +251,7 @@ vendor/lib/libremosaic_daemon.so|4eccaa2a663d500daf1a7a5ab1e450ceb7160f2b
 vendor/lib/hw/camera.sdm660.so|5d66b7e8c4193767871c293b97cf1dc542cda195
 
 # Camera firmware - from R11
-etc/firmware/cpp_firmware_v1_12_0.fw:vendor/etc/firmware/cpp_firmware_v1_12_0.fw|c7939d46f9875054c5b30c3280862e7d9df3dcf9
+etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw|c7939d46f9875054c5b30c3280862e7d9df3dcf9
 
 # Camera sensors - from R11
 vendor/lib/libmmcamera_isp_abf48.so|9fcadc2c6653713c0785297ef76a85175ad10e60
