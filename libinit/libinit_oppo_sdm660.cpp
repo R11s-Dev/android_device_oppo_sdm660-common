@@ -84,7 +84,7 @@ int read_file(const char *fname, char *data, int max_size) {
 }
 
 void vendor_load_properties() {
-    char const *prj_file = "/proc/oppoVersion/prjVersion";
+    char const *prj_file = "/proc/oppoVersion/real_prjVersion";
     char prj_version[16];
 
     if (read_file(prj_file, prj_version, sizeof(prj_version))) {
