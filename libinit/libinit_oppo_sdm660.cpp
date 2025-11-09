@@ -20,6 +20,7 @@ struct ModelInfo {
 };
 
 const std::unordered_map<int, ModelInfo> kModelInfoMap = {
+    {0,     {"sdm660",     "sdm660"}},
     {16051, {"R11",        "OPPO R11"}},
     {16052, {"R11t",       "OPPO R11t"}},
     {16102, {"R11Plust",   "OPPO R11 Plust"}},
