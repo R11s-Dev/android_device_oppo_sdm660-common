@@ -568,6 +568,7 @@ vendor/lib64/vendor.qti.ims.callcapability@1.0.so|40bea84fa6fcc19591f7fe115962cd
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|d65de10f8e1ceddd1e6c9c3f2bd210ccb2f04750
 vendor/lib64/vendor.qti.ims.factory@1.0.so|21c91c2aea181c6bb0f66790fd82944dcf117a6d
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|94c1552fd129d24f454843d5174fcbd4524b5992
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|91521d031060612dbf53d4a6437eba56780c768a
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|bd0db76d555c51971dcfcce62d981f987af32811
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|a5f9d28f7adbfbf349e6f5bc210c651c78ed776e
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
@@ -664,7 +665,6 @@ vendor/lib/libqmi_csi.so|7c43b1f7ff8ab7a56cdbd3bd1d971ac38805d206
 vendor/lib/libqmi_encdec.so|f85c4684ef54ef595522904a59286e69f2bc975c
 vendor/lib/libqmiservices.so|bcd3e58ec32220a0a7da615ddec5a521faae9985
 vendor/lib64/libdiag.so|52b13ca93b67a20ff6b0cbc8a872e984ac0da9ac
-vendor/lib64/libdsi_netctrl.so|f86baacb3aa9c4f0d29e3328aa2b1252b1ed386d
 vendor/lib64/libdsutils.so|1d8c2e537f36fd7b36cead813fd2a6313ebb8091
 vendor/lib64/libidl.so|fda78e792c95e858ce9c1eb43d08b1c742c2a867
 vendor/lib64/libqcci_legacy.so|ab23fc48a3abaaa83bdf492e78ff0fd401eff7e3
@@ -679,6 +679,9 @@ vendor/lib64/libqmi_common_so.so|325a41290032b082248db307481811b2319284cc
 vendor/lib64/libqmi_csi.so|0d1f5491164b7e72ad7d91a98e05ea851322bde1
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|a4745dc86a019d9b8d00d25f7e6fb4c4f0518b64
+
+# QMI - from Cat S62Pro
+vendor/lib64/libdsi_netctrl.so|37d71e616a2fa94225558eecee79f22c38a7208c
 
 # Radio
 vendor/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so|2f114ea1af8676918a0e7a8045bf73818bf373d7
