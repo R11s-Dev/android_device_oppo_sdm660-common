@@ -59,8 +59,6 @@ vendor/lib/libadm.so|88942852ab679506be8a64ab4b66b25a804e8073
 vendor/lib64/libaudio_log_utils.so|371eac73a036177105c2a1f59272b39e69244d0d
 
 # Audio soundtrigger
-lib/liblistensoundmodel2.so|da511b713cb54d6cef5cc5be9f671a3f26970721
-lib64/liblistensoundmodel2.so|0e1b74bf4b451e7aa5405043c8374929160cf27e
 vendor/lib/hw/sound_trigger.primary.sdm660.so|f24897519d353d5536ca97b0ea899882b170696d
 vendor/lib/libadpcmdec.so|8c72aa1812bfa749f266020366894c8a3873d99c
 vendor/lib/libgcs-calwrapper.so|cbf3dbe43161b68adfaf48a9da4e7fedd7b02f5a
@@ -491,7 +489,7 @@ vendor/lib64/libgnsspps.so|8e74447368d804c983950185fb565d22e0d7c769
 vendor/lib64/libgps.utils.so|c4e232c6cea1eadbe328986d2f7bb3a0c1a1f172
 vendor/lib64/libizat_client_api.so|a991964183128584c2275dc4ed7075a262771bc8
 vendor/lib64/libizat_core.so|33b795d109e4fd1fd0f9d034099cdcdc146f591d
-vendor/lib64/libjnihelper.so|27ca93bf0e40267d0a077c906a6d9409f50254bb
+vendor/lib64/libjnihelper.so|d3687f06782adc074a38b9ff3c1aacd57ec7a6e7
 vendor/lib64/liblbs_core.so|a2efd73837cbb7a26e11644f42f124269b3cd8fe
 vendor/lib64/libloc_api_v02.so|8a757f19a3f68867be00f700ad307f6880f26745
 vendor/lib64/libloc_core.so|76c266e9c2ce5598d007f44c89788b1b3baff9e4
