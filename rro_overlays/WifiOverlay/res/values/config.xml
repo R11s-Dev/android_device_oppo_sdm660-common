@@ -81,4 +81,10 @@
 
     <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
     <bool translatable="false" name="config_wifiSupportChannelOnDataPath">true</bool>
+
+    <!-- Disable SAE (WPA3 personal) for Wifi hotspot (SAP) -->
+    <bool translatable="false" name="config_wifi_softap_sae_supported">false</bool>
+
+    <!-- Boolean indicating whether to enable WPA3-SAE upgrade for WPA2-PSK networks. -->
+    <bool name="config_wifiSaeUpgradeEnabled">false</bool>
 </resources>
