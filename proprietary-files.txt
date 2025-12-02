@@ -518,13 +518,14 @@ vendor/etc/sap.conf|afbcbacb367b2fcc05efcad76ef096d794e768ba
 vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
 # IMS - from Cat S62Pro
-system_ext/lib64/libimscamera_jni.so|486abdb09a82ccee5e49307a17ba3dc9efdf5e9d
-system_ext/lib64/libimsmedia_jni.so|f8be2575f8eaef8bb89a4bc049381ebffe857831
-system_ext/lib64/lib-imsvt.so|353df5991439224f0cdb2e3439ec0f618fe2bb24
-system_ext/lib64/lib-imsvideocodec.so|ee8ba719d4d73998f45c131f6d90e638f31ecded
-system_ext/lib64/lib-imsvtutils.so|b4a39a247f767723ce67182ee92f526c029a019d
--system_ext/priv-app/ims/ims.apk|91c8e9b96882063769ef0a27ac9ea2627e8a8436
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
+system_ext/lib64/libimscamera_jni.so:vendor/lib64/libimscamera_jni.so|486abdb09a82ccee5e49307a17ba3dc9efdf5e9d
+system_ext/lib64/libimsmedia_jni.so:vendor/lib64/libimsmedia_jni.so|f8be2575f8eaef8bb89a4bc049381ebffe857831
+system_ext/lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so|353df5991439224f0cdb2e3439ec0f618fe2bb24
+system_ext/lib64/lib-imsvideocodec.so:vendor/lib64/lib-imsvideocodec.so|ee8ba719d4d73998f45c131f6d90e638f31ecded
+system_ext/lib64/lib-imsvtutils.so:vendor/lib-imsvtutils.so|b4a39a247f767723ce67182ee92f526c029a019d
+system_ext/lib64/lib-imsvtextutils.so:vendor/lib64/lib-imsvtextutils.so|336c0ffed49a0a4605f41b488771ee0217fa80f0
+system_ext/lib64/lib-imscamera.so:vendor/lib64/lib-imsvtextutils.so|336c0ffed49a0a4605f41b488771ee0217fa80f0
+-system_ext/priv-app/ims/ims.apk:vendor/priv-app/ims/ims.apk|91c8e9b96882063769ef0a27ac9ea2627e8a8436
 vendor/bin/ims_rtp_daemon|fbec6a715d54e31c3833799386f8954b1b83b1d1
 vendor/bin/imsdatadaemon|36738383eb8e711adf94f1bc09dee50b78c747f6
 vendor/bin/imsqmidaemon|5fde955e71392479b2f3e6aaf6005fa54b618678
