@@ -345,9 +345,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-PRODUCT_COPY_FILES += \
-    ${LOCAL_PATH}/configs/permissions/telephony_privapp-permissions-qti.xml:${TARGET_COPY_OUT_VENDOR}/etc/permissions/telephony_privapp-permissions-qti.xml
-
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
