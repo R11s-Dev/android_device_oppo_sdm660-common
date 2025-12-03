@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.oppo_sdm660
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
