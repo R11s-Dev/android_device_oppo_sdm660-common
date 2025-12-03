@@ -197,6 +197,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     android.hardware.tetheroffload.config@1.0
 
+# IRSC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
