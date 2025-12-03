@@ -328,6 +328,9 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Fingerprint device
 /dev/qbt1000              0660   system     system
+/sys/bus/platform/devices/soc:fpc_fpc1020 irq             0660 system system
+/sys/bus/platform/devices/soc:fpc_fpc1020 irq_enable      0660 system system
+/sys/bus/platform/devices/soc:fpc_fpc1020 wakelock_enable 0660 system system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
