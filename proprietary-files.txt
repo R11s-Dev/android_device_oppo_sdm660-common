@@ -413,6 +413,10 @@ vendor/lib64/vendor.display.color@1.1.so|c66b3b0ab5c084719e706ced0ea65cce037de64
 vendor/lib64/vendor.display.color@1.2.so|292cee21df80453bdf6366718a0104a4a48f6352
 vendor/lib64/vendor.display.postproc@1.0.so|cc62ff1b3e8ff0e11b750ae59a0f851fdab50962
 
+# Display - from Cat S62Pro
+system_ext/lib64/libgralloc.qti.so|cb1bb32923a147c8c982dc50432fa75988e777eb
+system_ext/lib64/libqdMetaData.so:system_ext/lib64/libqdMetaData-v30.so|4a5af4a974e6baf73a1f9617c50763a3de428636
+
 # FM
 lib64/fm_helium.so|10bf2489995d3717ebb0f91c73ffec3504fd0159
 lib64/libfm-hci.so|a281726ca32cd52609c9b3e65345eb7dd868339c
@@ -544,7 +548,7 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|11ae7d168f59d2929295f9cf7688
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|59d6259c6358d104eea3a3147b891ead93adee73
 system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so|39bb7e183b1e2bb1b1d5887f48a7d08bde960f42
 system_ext/lib64/lib-imscamera.so|49ead972646b09d700556d63676673b3e8af2036
-system_ext/lib64/lib-imsvideocodec.so|ee8ba719d4d73998f45c131f6d90e638f31ecded
+system_ext/lib64/lib-imsvideocodec.so|4b7de5ed1a0346745de74cc4d8307be0ec2e2611
 system_ext/lib64/lib-imsvt.so|353df5991439224f0cdb2e3439ec0f618fe2bb24
 system_ext/lib64/lib-imsvtextutils.so|336c0ffed49a0a4605f41b488771ee0217fa80f0
 system_ext/lib64/lib-imsvtutils.so|b4a39a247f767723ce67182ee92f526c029a019d
