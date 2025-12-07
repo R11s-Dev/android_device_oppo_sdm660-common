@@ -1,3 +1,4 @@
+# All blobs from PAAM00, unless pinned
 # PAAM00 package version: PAAM00-user 10 QKQ1.191224.003, unless stated otherwise
 # Cat S62Pro package version: sdm660_64-user 11 RKQ1.210406.002 1.015.00, unless stated otherwise
 # OPPO R11 package version: sdm660_64-user-9-PKQ1.190414.001-eng.root.20201030.223113-release-keys
