@@ -185,7 +185,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.lte_vrte_ltd=1 \
-    persist.vendor.radio.poweron_opt=1 \
     persist.vendor.radio.process_sups_ind=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.relay_oprt_change=1 \
