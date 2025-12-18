@@ -18,6 +18,7 @@
 
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
+
 <resources>
     <!-- Determine whether we should show the "listen for instructions" screen after
          successfully placing the OTA call -->
