@@ -55,6 +55,7 @@ on fs
     mkdir /mnt/vendor/opporeserve 0771 system system
     #endif /*VENDOR_EDIT*/
     mount_all /vendor/etc/fstab.qcom --early
+    mount tmpfs tmpfs /metadata size=10M
     swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
