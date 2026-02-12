@@ -113,6 +113,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/dsp:/dsp
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Qualcomm Hardware
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_GRALLOC1 := true
