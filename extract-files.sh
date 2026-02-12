@@ -72,9 +72,6 @@ function blob_fixup() {
         vendor/lib/libmmcamera_interface.so)
         sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
         ;;
-        system_ext/lib64/lib-imsvideocodec.so)
-        "${PATCHELF}" --replace-needed "libqdMetaData.so" "libqdMetaData-v30.so" "${2}"
-        ;;
     esac
 }
 
