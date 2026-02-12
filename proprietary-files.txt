@@ -1,7 +1,7 @@
 # All blobs from PAAM00, unless pinned
-# PAAM00 package version: PAAM00-user 10 QKQ1.191224.003, unless stated otherwise
 # Cat S62Pro package version: sdm660_64-user 11 RKQ1.210406.002 1.015.00, unless stated otherwise
 # OPPO R11 package version: sdm660_64-user-9-PKQ1.190414.001-eng.root.20201030.223113-release-keys
+# PAAM00 package version: PAAM00-user 10 QKQ1.191224.003, unless stated otherwise
 
 # ADSP
 vendor/bin/adsprpcd
@@ -94,8 +94,8 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c6be436d0f66aafd5be3a
 vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
 
 # Bluetooth (A2DP) - from Cat S62Pro
-vendor/lib/btaudio_offload_if.so|752c3e774c1585f7842ecbd85180365d85fc789f
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|f5ea997b223943101bed84470f191b2e4ce8957c
+vendor/lib/btaudio_offload_if.so|752c3e774c1585f7842ecbd85180365d85fc789f
 vendor/lib/libbluetooth_audio_session_qti.so|9a86488113e10594e0a3d4a36b436c6b7fd59317
 vendor/lib/libbluetooth_audio_session_qti_2_1.so|d9f83086774e22c8a09b02fa87850fae7382fdf1
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
@@ -468,10 +468,10 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/cacert_location.pem
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
@@ -730,8 +730,8 @@ system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94
 -system_ext/framework/embmslibrary.jar|b5fe26c1cea597af8a1751332d187f2f574816c1
 -system_ext/framework/qcrilhook.jar|ec5147b14e858c34e98874a50daca7be4d86af27
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|e185e79a10c1ce5e75d36c5622cc93db917cb212
-vendor/bin/adpl|71fa114f37e68a5afbd3f77abc664c8f7347e3e4
 vendor/bin/hw/qcrild|0e3b74c43cea4d1b6e9e5f5bbf7b5824d9fe10c9
+vendor/bin/adpl|71fa114f37e68a5afbd3f77abc664c8f7347e3e4
 vendor/bin/netmgrd|22ca76db16e5eaa1e4faed38b6c62ed1d050ae0f
 vendor/bin/port-bridge|a55e0ba7812d98269f92ee3f683417687c8d0dad
 vendor/bin/qrtr-cfg|9019f1c99cb23913f540433285af0d26c397c121
@@ -797,7 +797,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|5ec80005a20a2ef6
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|663b65448ec8f5972337e1bbdc08ef5d4b08e8fa
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|3ffb7301b6c185b114157c5423de604e5ba93ade
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|75a58827c0b4e06e2ca8163b6a904dab2af3be6a
-vendor/radio/qcril_database/qcril.db|20565c569f6c9befe768fc549d925b94aa0505d6
 vendor/radio/qcril_database/upgrade/0_initial.sql|df7e164e68647b0811a963193624911c53b32552
 vendor/radio/qcril_database/upgrade/1_version_intro.sql|6bec9588f4763810937cc9a7c2e66a0a52ff07fb
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql|b4a825ba20fea3e2f20c7f02c8bd64596c24a75e
@@ -806,6 +805,7 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
+vendor/radio/qcril_database/qcril.db|20565c569f6c9befe768fc549d925b94aa0505d6
 
 # SCVE
 vendor/lib64/libscveCommon.so
