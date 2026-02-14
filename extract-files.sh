@@ -59,6 +59,10 @@ function blob_fixup() {
         product/lib64/libdpmframework.so)
         "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
         ;;
+        # Patch lib-imsvideocodec to Replace libqdMetaData.so with libqdMetaData.system.so
+        system_ext/lib64/lib-imsvideocodec.so)
+        "${PATCHELF}" --replace-needed "libqdMetaData.so" "libqdMetaData.system.so" "${2}"
+        ;;
         # Patch libwvhidl and libsettings to load versioned libprotobuf from SDK 28, as SDK 30 removed some symbols
         vendor/lib64/libwvhidl.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
