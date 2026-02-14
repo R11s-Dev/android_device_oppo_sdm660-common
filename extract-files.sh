@@ -63,12 +63,7 @@ function blob_fixup() {
         vendor/lib64/libwvhidl.so)
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
         ;;
-        vendor/lib64/libsettings.so)
-        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
-        ;;
-        vendor/lib64/libril-qc-hal-qmi.so)
-        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
-        ;;
+        # Fix camera hal to load config from /vendor/etc/camera instead of /system/etc/camera
         vendor/lib/libmmcamera_interface.so)
         sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
         ;;
