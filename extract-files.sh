@@ -57,7 +57,7 @@ function blob_fixup() {
     case "${1}" in
         # Patch libdpmframework to add libshim_dpmframework shim
         product/lib64/libdpmframework.so)
-        "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+        grep -q "libshim_dpmframework.so" "${2}" || "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
         ;;
         # Patch lib-imsvideocodec to Replace libqdMetaData.so with libqdMetaData.system.so
         system_ext/lib64/lib-imsvideocodec.so)
