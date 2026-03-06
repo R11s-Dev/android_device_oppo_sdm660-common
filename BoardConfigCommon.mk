@@ -133,7 +133,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-10-05
+VENDOR_SECURITY_PATCH := 2020-12-05
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk

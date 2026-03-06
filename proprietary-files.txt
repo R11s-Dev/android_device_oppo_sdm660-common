@@ -1,7 +1,7 @@
 # All blobs from PAAM00, unless pinned
-# Cat S62Pro package version: sdm660_64-user 11 RKQ1.210406.002 1.015.00, unless stated otherwise
-# OPPO R11 package version: sdm660_64-user-9-PKQ1.190414.001-eng.root.20201030.223113-release-keys
-# PAAM00 package version: PAAM00-user 10 QKQ1.191224.003, unless stated otherwise
+# Cat S62Pro package version: S62Pro-user 11 RKQ1.210406.002 1.015.00 release-keys, unless stated otherwise
+# OPPO R11 package version: R11-user 9 PKQ1.190414.001 eng.root.20201030.223113 release-keys, unless stated otherwise
+# PAAM00 package version: PAAM00-user 10 QKQ1.191224.003 1608710123 release-keys, unless stated otherwise
 
 # ADSP
 vendor/bin/adsprpcd
