@@ -9,6 +9,8 @@ include vendor/oppo/sdm660-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/oppo/sdm660-common
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
