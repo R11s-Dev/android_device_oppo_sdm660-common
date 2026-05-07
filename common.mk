@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-core
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default
