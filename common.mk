@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
@@ -339,14 +340,10 @@ PRODUCT_PACKAGES += \
     libxml2
 
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5 \
     android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2 \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -381,6 +378,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
