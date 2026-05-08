@@ -251,10 +251,15 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCommon \
+    FrameworkResOverlayCommon \
+    SettingsOverlayCommon \
+    SettingsProviderOverlayCommon \
+    SystemUIOverlayCommon \
+    TelephonyOverlayCommon \
+    TetheringOverlayCommon \
+    WifiOverlayCommon
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -425,7 +430,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.1.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 

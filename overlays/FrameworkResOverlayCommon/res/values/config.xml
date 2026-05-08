@@ -127,28 +127,6 @@
         <item>10000</item>
     </integer-array>
 
-    <!-- Array of hysteresis constraints for brightening, corresponding to the levels. -->
-    <integer-array name="config_autoBrightnessLuxMaxLimit">
-        <item>5</item>
-        <item>150</item>
-        <item>1150</item>
-        <item>1900</item>
-        <item>2800</item>
-        <item>4000</item>
-        <item>80000</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraints for darkening, corresponding to the levels. -->
-    <integer-array name="config_autoBrightnessLuxMinLimit">
-        <item>0</item>
-        <item>1</item>
-        <item>6</item>
-        <item>540</item>
-        <item>1025</item>
-        <item>2000</item>
-        <item>2800</item>
-    </integer-array>
-
     <!-- Array of output values for LCD backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
@@ -202,17 +180,6 @@
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system_ext/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
-    </string-array>
-
-    <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image b/119800099 -->
-    <string-array translatable="false" name="config_jitzygoteBootImagePinnerServiceFiles">
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
@@ -301,10 +268,6 @@
 
    <!-- Operating volatage for bluetooth controller. 0 by default-->
    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3300</integer>
-   <!-- The duration (in milliseconds) for the outgoing sms authorization request to timeout.-->
-   <integer name="config_sms_authorization_timeout_ms">15000</integer>
-   <!-- Enable SMS authorization support -->
-   <bool name="config_sms_authorization_enabled">true</bool>
 
    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
    on the headphone/microphone jack. When false use the older uevent framework -->

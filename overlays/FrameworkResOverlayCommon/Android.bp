@@ -1,7 +1,6 @@
 runtime_resource_overlay {
-    name: "WifiOverlay",
-    theme: "WifiOverlay",
-    certificate: "platform",
+    name: "FrameworkResOverlayCommon",
+    theme: "FrameworkResOverlayCommon",
     sdk_version: "current",
     product_specific: true
 }
