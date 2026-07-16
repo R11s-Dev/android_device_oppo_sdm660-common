@@ -95,8 +95,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/oppo/sdm660
 TARGET_KERNEL_CONFIG := \
     vendor/sdm660-perf_defconfig \
-    vendor/oppo/sdm660-common.config \
-    vendor/oppo/$(PRODUCT_DEVICE).config
+    vendor/oppo/sdm660.config \
+    vendor/oppo/$(PRODUCT_DEVICE).config \
+    vendor/oppo/test.config
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
