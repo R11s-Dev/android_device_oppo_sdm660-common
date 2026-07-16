@@ -99,6 +99,9 @@ TARGET_KERNEL_CONFIG := \
     vendor/oppo/$(PRODUCT_DEVICE).config \
     vendor/oppo/test.config
 
+# For Linux 4.19 kernel
+TARGET_ENFORCES_QSSI := true
+
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
