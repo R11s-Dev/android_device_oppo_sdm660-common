@@ -454,10 +454,6 @@ system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c618
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
-# Gatekeeper
-vendor/lib/libqcbor.so
-vendor/lib64/libqcbor.so
-
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
 vendor/bin/loc_launcher
