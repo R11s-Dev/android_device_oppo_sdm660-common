@@ -34,8 +34,8 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# ANT+
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# ANT+ - from Cat S62Pro
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
 
 # Audio
 vendor/lib/libacdb-fts.so
@@ -454,11 +454,12 @@ vendor/lib64/vendor.display.color@1.1.so|3cf0d256372bd418462326e6067b4e121322619
 vendor/lib64/vendor.display.color@1.2.so|8184e5d3e404864b1a1518b4d4e2012a5839660b
 vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
 
-# FM
-lib64/fm_helium.so
-lib64/libfm-hci.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# FM - from Cat S62Pro
+lib64/fm_helium.so:system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
+lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Gatekeeper
 vendor/lib/libqcbor.so
