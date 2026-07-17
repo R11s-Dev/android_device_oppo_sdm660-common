@@ -13,9 +13,6 @@ $(call inherit-product, vendor/oppo/sdm660-common/sdm660-common-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# APEX
-PRODUCT_COMPRESSED_APEX := false
-
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 25
 
