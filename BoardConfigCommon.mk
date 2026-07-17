@@ -111,6 +111,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
+TARGET_ENFORCES_QSSI := true
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
