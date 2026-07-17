@@ -345,35 +345,28 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM (QSEECom)
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib/libcppf.so
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libcpion.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libssd.so
-vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+# DRM (QSEECom) - from Cat S62Pro
+vendor/bin/qseecomd|97eeb3f297d16e0364e73f8e78ccb7a07e70f093
+vendor/lib/libQSEEComAPI.so|14d85d1661f11fed27a99f618370de21abfbf1b9
+vendor/lib/libsdedrm.so|752fa74723368e6bde29cbf004fe31d6f33ceb97
+vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
+vendor/lib64/libGPreqcancel_svc.so|5369bb41c214c0bd3782438c0488cd2dba8cb667
+vendor/lib64/libQSEEComAPI.so|7ad0a71938c1de5dbb54a52fb68285ac08f0a130
+vendor/lib64/libSecureUILib.so|b98555b76083a897fc9bbfc27778750d2d47817a
+vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
+vendor/lib64/libdrmfs.so|d01f7964b64bfabd56afea030a2e874f5b3af266
+vendor/lib64/libdrmtime.so|9aca2a5224378365232933b06a742a2498dd7468
+vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
+vendor/lib64/librpmb.so|eac8411b60e4842b0fee4c9145dd9cdc3e24a67e
+vendor/lib64/libsdedrm.so|f02d7bef5f9fa3f1265b5a8b3b8ab481a4cedee2
+vendor/lib64/libsecureui_svcsock.so|6af612f057f4f28720d6db9b300b58c883da6539
+vendor/lib64/libssd.so|774488b88c37053067b3cad551ac95360c03edd3
 
-# DRM (OEM Crypto API)
-vendor/lib64/libminkdescriptor.so
-
-# DRM (widevine)
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib64/libwvhidl.so
+# DRM (widevine) - from Cat S62Pro
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|2158f47423c723a9da29bb81bb16987a1e715c21
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
 
 # DRM (widevine firmware)
 vendor/firmware/widevine.b00
