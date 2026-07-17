@@ -97,6 +97,7 @@ TARGET_KERNEL_CONFIG := \
     vendor/sdm660-perf_defconfig \
     vendor/oppo/sdm660-common.config \
     vendor/oppo/$(PRODUCT_DEVICE).config
+TARGET_KERNEL_VERSION := 4.19
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
