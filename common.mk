@@ -42,14 +42,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
-    libaudioalsa \
     libaudioroute \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libtinycompress \
     libvolumelistener \
-    libssrec \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -80,9 +78,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libbluetooth \
-    libbt-vendor
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml
@@ -100,18 +96,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service
 
 PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libmegface \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    Snap
 
 # Display
 PRODUCT_PACKAGES += \
@@ -217,7 +208,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor
@@ -257,14 +247,10 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayCommon \
     SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
-    SystemUIOverlayCommon \
-    TelephonyOverlayCommon \
-    TetheringOverlayCommon \
-    WifiOverlayCommon
+    TelephonyOverlayCommon
 
 # Perf
 PRODUCT_PACKAGES += \
-    libqti-perfd-client \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
@@ -319,7 +305,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power-ndk_platform \
     vendor.qti.hardware.perf@2.0.vendor
 
 # Public Libraries
