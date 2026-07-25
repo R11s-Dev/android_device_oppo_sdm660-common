@@ -74,6 +74,13 @@ function blob_fixup() {
                           -P "FF 03 01 D1 FD 7B 03 A9 FD C3 00 91 E0 13 00 A9 E5 1B 01 A9 39 40 FC 97 08 04 00 11 E8 83 00 39 E0 03 40 F9 A1 04 80 52 E2 83 00 91 23 00 80 52 E4 07 40 F9 E5 13 40 B9 E6 1B 40 B9 CD FF FF 97 FD 7B 43 A9 FF 03 01 91 C0 03 5F D6" \
                           -f "${2}"
             ;;
+        # FastRPC: force /dev/adsprpc-smd-secure for all domains (b.ne -> b @0x129D4)
+        vendor/lib64/libcdsprpc.so)
+            [ "${2}" = "" ] && return 0
+            "${SIGSCAN}" -p "FD 7B 02 A9 FD 83 00 91 13 04 00 12 7F 0E 00 71 C1 01 00 54 A9 00 00 B0 68 02 1F 52 29 81 00 91 20 59 68 F8" \
+                          -P "FD 7B 02 A9 FD 83 00 91 13 04 00 12 7F 0E 00 71 0E 00 00 14 A9 00 00 B0 68 02 1F 52 29 81 00 91 20 59 68 F8" \
+                          -f "${2}"
+            ;;
         # Fix camera hal to load config from /vendor/etc/camera instead of /system/etc/camera
         vendor/lib/libmmcamera_interface.so)
             sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"

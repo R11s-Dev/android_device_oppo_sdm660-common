@@ -88,8 +88,7 @@ persist.vendor.qcom.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
-persist.vendor.camera.expose.aux=1
-persist.vendor.camera.preview.ubwc=0
+persist.vendor.camera.HAL3.enabled=1
 persist.vendor.qti.telephony.vt_cam_interface=1
 vidc.enc.dcvs.extra-buff-count=2
 
