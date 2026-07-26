@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# rfsa_daemon: provides RFSA QMI service 0x1C to the modem so it can
+# locate the rmtfs and oembackup shared-memory buffers.
+# Must start before/at modem-up; class core matches rmt_storage timing.
+
+service vendor.oppo.rfsa /vendor/bin/rfsa_daemon
+    class core
+    user root
+    group system
+    shutdown critical
+    ioprio rt 0
