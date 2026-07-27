@@ -184,7 +184,7 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc
 vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 
 # Camera
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|ae20a7d10c919b1dfe585b59781bf0ae8e3fcbbf
 vendor/lib/libPolarrRender.so
 vendor/lib/libStDualCam.so
 vendor/lib/libVDUpScale.so

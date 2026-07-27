@@ -81,6 +81,44 @@ function blob_fixup() {
                           -P "FD 7B 02 A9 FD 83 00 91 13 04 00 12 7F 0E 00 71 0E 00 00 14 A9 00 00 B0 68 02 1F 52 29 81 00 91 20 59 68 F8" \
                           -f "${2}"
             ;;
+        # Adapt the legacy Oppo camera HAL to the current QTI gralloc handle.
+        # 0x34 is layer_count; buffer size and offset are at 0x48 and 0x4c.
+        vendor/lib/hw/camera.sdm660.so)
+            [ "${2}" = "" ] && return 0
+            "${SIGSCAN}" -p "4F F4 51 73 C1 68 D0 E9 0D 20 CD E9 03 20 4B 48" \
+                          -P "4F F4 51 73 C1 68 D0 E9 12 20 CD E9 03 20 4B 48" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "C0 68 CB F8 08 00 31 68 08 9A 00 26 49 6B CB E9 04 21" \
+                          -P "C0 68 CB F8 08 00 31 68 08 9A 00 26 89 6C CB E9 04 21" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "D4 F8 7C 39 01 22 C8 68 49 6B E0 47 C5 F8 80 09 3E E0" \
+                          -P "D4 F8 7C 39 01 22 C8 68 89 6C E0 47 C5 F8 80 09 3E E0" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "DB F8 00 00 CA 68 D1 E9 0D 31 05 91 CD E9 03 03 20 48" \
+                          -P "DB F8 00 00 CA 68 D1 E9 12 31 05 91 CD E9 03 03 20 48" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "30 68 3D 46 C0 68 CA F8 08 00 30 68 06 99 40 6B CA E9 04 10" \
+                          -P "30 68 3D 46 C0 68 CA F8 08 00 30 68 06 99 80 6C CA E9 04 10" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "D4 F8 7C 39 01 22 C8 68 49 6B E0 47 C5 F8 80 09 5A E0" \
+                          -P "D4 F8 7C 39 01 22 C8 68 89 6C E0 47 C5 F8 80 09 5A E0" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "DB F8 00 00 CA 68 D1 E9 0D 31 05 91 CD E9 03 03 21 48" \
+                          -P "DB F8 00 00 CA 68 D1 E9 12 31 05 91 CD E9 03 03 21 48" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "38 68 C0 68 CA F8 08 00 38 68 06 99 40 6B CA E9 04 10 B2 46" \
+                          -P "38 68 C0 68 CA F8 08 00 38 68 06 99 80 6C CA E9 04 10 B2 46" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "CD F8 2C 80 C8 68 49 6B B8 47 DD F8 2C 80 C5 F8 80 09" \
+                          -P "CD F8 2C 80 C8 68 89 6C B8 47 DD F8 2C 80 C5 F8 80 09" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "DF F8 B0 76 E0 68 CA 68 7F 44 D1 E9 0D 31 CD E9 00 78" \
+                          -P "DF F8 B0 76 E0 68 CA 68 7F 44 D1 E9 12 31 CD E9 00 78" \
+                          -f "${2}"
+            "${SIGSCAN}" -p "D6 F8 58 08 10 99 40 6B C4 E9 04 10 01 20" \
+                          -P "D6 F8 58 08 10 99 80 6C C4 E9 04 10 01 20" \
+                          -f "${2}"
+            ;;
         # Fix camera hal to load config from /vendor/etc/camera instead of /system/etc/camera
         vendor/lib/libmmcamera_interface.so)
             sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
