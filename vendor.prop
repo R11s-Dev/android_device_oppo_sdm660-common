@@ -34,7 +34,6 @@ persist.vendor.audio.hw.binder.size_kbyte=1024
 vendor.audio.volume.headset.gain.depcal=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.audio.spkr_prot.tx.sampling_rate=48000
-
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -93,6 +92,9 @@ persist.vendor.camera.expose.aux=1
 persist.vendor.camera.preview.ubwc=0
 persist.vendor.qti.telephony.vt_cam_interface=1
 vidc.enc.dcvs.extra-buff-count=2
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
 
 # CNE/DPM
 persist.vendor.cne.feature=1
