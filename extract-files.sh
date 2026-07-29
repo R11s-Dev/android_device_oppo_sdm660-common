@@ -119,6 +119,12 @@ function blob_fixup() {
                           -P "D6 F8 58 08 10 99 80 6C C4 E9 04 10 01 20" \
                           -f "${2}"
             ;;
+        vendor/lib/libmmcamera2_sensor_modules.so)
+            [ "${2}" = "" ] && return 0
+            "${SIGSCAN}" -p "32 D8 DF E8 07 F0 36 03 03 3B 3E 00 00 26 9D 20 39 E0" \
+                          -P "32 D8 DF E8 07 F0 36 31 31 3B 3E 00 00 26 9D 20 39 E0" \
+                          -f "${2}"
+            ;;
         # Fix camera hal to load config from /vendor/etc/camera instead of /system/etc/camera
         vendor/lib/libmmcamera_interface.so)
             sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
