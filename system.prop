@@ -10,6 +10,9 @@ persist.camera.preview.ubwc=0
 ro.camera.dualcam.type=2
 ro.camera.filter.version=1
 ro.camera.temperature.limit=480
+persist.camera.eis.enable=0
+persist.camera.is_type=2
+persist.camera.is_type_preview=2
 
 # RIL
 DEVICE_PROVISIONED=1
