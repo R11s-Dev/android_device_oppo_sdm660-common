@@ -163,11 +163,6 @@ vendor.mm.enable.qcom_parser=13631487
 # Netflix custom property
 ro.netflix.bsp_rev=Q660-13149-1
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.qti.core_ctl_min_cpu=2
-ro.vendor.qti.core_ctl_max_cpu=4
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1

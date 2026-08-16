@@ -135,6 +135,7 @@ VENDOR_SECURITY_PATCH := 2020-12-05
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Treble
