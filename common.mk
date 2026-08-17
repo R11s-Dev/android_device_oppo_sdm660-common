@@ -231,6 +231,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCommon \
     FrameworkResOverlayCommon \
+    LineageSdkResOverlayCommon \
     SettingsOverlayCommon \
     SettingsProviderOverlayCommon \
     TelephonyOverlayCommon
