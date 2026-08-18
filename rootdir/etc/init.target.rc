@@ -452,7 +452,7 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 
-on charger
+on property:init.svc.vendor.charger=running
     start qcom-post-boot
     start vendor.hvdcp_opti
     setprop vendor.usb.controller a800000.dwc3
