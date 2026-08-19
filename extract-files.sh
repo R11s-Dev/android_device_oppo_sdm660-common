@@ -139,6 +139,9 @@ function blob_fixup() {
             [ "${2}" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        vendor/bin/pm-service)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v33.so" "${2}"
+            ;;
     esac
 }
 
