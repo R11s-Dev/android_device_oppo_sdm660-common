@@ -191,9 +191,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.sdm660 \
-    android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service
+    android.hardware.light-service.lineage
 
 # Media
 PRODUCT_PACKAGES += \
