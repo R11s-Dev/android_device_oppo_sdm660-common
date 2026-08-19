@@ -129,6 +129,16 @@ function blob_fixup() {
         vendor/lib/libmmcamera_interface.so)
             sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
             ;;
+        vendor/lib/libarcsoft_dualcam_refocus_right.so | \
+        vendor/lib/libfilter.so | \
+        vendor/lib/libarcsoft_dualcam_refocus_preview.so | \
+        vendor/lib/libmmcamera_hdr_gb_lib.so | \
+        vendor/lib/libarcsoft_dualcam_bokeh_api.so | \
+        vendor/lib/libarcsoft_smart_denoise.so | \
+        vendor/lib/libarcsoft_dualcam_refocus_left.so)
+            [ "${2}" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
     esac
 }
 
