@@ -14,6 +14,9 @@ persist.camera.eis.enable=0
 persist.camera.is_type=2
 persist.camera.is_type_preview=2
 
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
 # RIL
 DEVICE_PROVISIONED=1
 gsm.lte.ca.support=1
