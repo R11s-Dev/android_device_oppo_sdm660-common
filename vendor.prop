@@ -201,3 +201,8 @@ ro.vendor.sensors.sta_detect=true
 
 # Time-Service
 persist.vendor.delta_time.enable=true
+
+# USB
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
