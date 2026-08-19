@@ -307,7 +307,8 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
