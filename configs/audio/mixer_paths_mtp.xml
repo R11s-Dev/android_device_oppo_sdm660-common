@@ -443,11 +443,15 @@
     <ctl name="EAR_S" value="ZERO" />
 
     <!-- ak43xx -->
+    <ctl name="AK4376 PDN Control" value="Off" />
+    <ctl name="AK4376 BICK Output Frequency" value="2" />
+    <ctl name="AK4376 BICK Frequency Select" value="32fs" />
     <ctl name="AK4376 HP-Amp Analog Volume" value="0" />
     <ctl name="AK4376 HPL Mixer LDACL" value="0" />
     <ctl name="AK4376 HPR Mixer RDACR" value="0" />
     <ctl name="AK4376 Digital Output VolumeL" value="12" />
     <ctl name="AK4376 Digital Output VolumeR" value="12" />
+    <ctl name="AK4376 Low Power Mode" value="High Performance" />
 
     <!-- anc related -->
 
@@ -2547,15 +2551,29 @@
     </path>
 
     <path name="headphones">
+        <ctl name="PRIM_MI2S_RX Channels" value="Two" />
+        <ctl name="AK4376 PDN Control" value="On" />
+        <ctl name="AK4376 BICK Output Frequency" value="2" />
+        <ctl name="AK4376 BICK Frequency Select" value="48fs" />
         <ctl name="AK4376 HP-Amp Analog Volume" value="11" />
         <ctl name="AK4376 Digital Output VolumeL" value="18" />
         <ctl name="AK4376 Digital Output VolumeR" value="18" />
         <ctl name="AK4376 HPL Mixer LDACL" value="1" />
         <ctl name="AK4376 HPR Mixer RDACR" value="1" />
+        <ctl name="PRIM_MI2S_RX Format" value="S24_LE" />
     </path>
 
     <path name="headphones-44.1">
         <path name="headphones" />
+    </path>
+
+    <path name="hph-lowpower-mode">
+        <path name="headphones" />
+        <ctl name="AK4376 BICK Frequency Select" value="32fs" />
+        <ctl name="AK4376 Low Power Mode" value="Low Power" />
+        <ctl name="AK4376 Digital Output VolumeL" value="25" />
+        <ctl name="AK4376 Digital Output VolumeR" value="25" />
+        <ctl name="PRIM_MI2S_RX Format" value="S16_LE" />
     </path>
 
     <path name="true-native-mode">
@@ -2607,6 +2625,11 @@
 
     <path name="voice-headphones">
         <path name="headphones" />
+        <ctl name="AK4376 BICK Frequency Select" value="32fs" />
+        <ctl name="AK4376 Low Power Mode" value="Low Power" />
+        <ctl name="AK4376 Digital Output VolumeL" value="25" />
+        <ctl name="AK4376 Digital Output VolumeR" value="25" />
+        <ctl name="PRIM_MI2S_RX Format" value="S16_LE" />
     </path>
 
     <path name="voice-line">
