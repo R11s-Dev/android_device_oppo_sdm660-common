@@ -75,7 +75,8 @@ BOARD_KERNEL_CMDLINE := \
     sched_enable_hmp=1 \
     sched_enable_power_aware=1 \
     service_locator.enable=1 \
-    loop.max_part=7
+    loop.max_part=7 \
+    cgroup.memory=nokmem,nosocket
 # TODO: Set SELinux to Permissive mode
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
